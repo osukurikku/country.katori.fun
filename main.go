@@ -27,7 +27,7 @@ func main() {
 	// Get the HTTP server rollin'
 	http.HandleFunc("/", HTTPRequestHandler)
 	log.Println("Server listening!")
-	http.ListenAndServe(":61430", nil)
+	http.ListenAndServe("127.0.0.1:61430", nil)
 }
 
 // Standard request handler if there's no static file to be served.
